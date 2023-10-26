@@ -1,0 +1,42 @@
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()"></form>
+<h1>formulaire</h1>
+
+<label>nom</label>
+<input formControlName="nom">
+<label>prenom</label>
+<input formControlName="prenom">
+<label>cp</label>
+<input formControlName="cp">
+<label>ville</label>
+<input formControlName="ville">
+<label>tel</label>
+<input formControlName="tel">
+<label>email</label>
+<input formControlName="email">
+<label>civilité</label>
+<input formControlName="civilité">
+<label>login</label>
+<input formControlName="login">
+<label>password</label>
+<input formControlName="password">
+<label>pays</label>
+<input formControlName="pays">
+
+<br>
+<button type="submit">Valider</button>
+
+<div *ngIf="isSubmitted">
+    <h2>Récapitulatif</h2>
+    <p>Nom: {{profileForm.get('nom').value}}</p>
+    <p>Prénom: {{profileForm.get('prenom').value}}</p>
+    <p>Prénom: {{profileForm.get('cp').value}}</p>
+    <p>Prénom: {{profileForm.get('ville').value}}</p>
+    <p>Prénom: {{profileForm.get('tel').value}}</p>
+    <p>Prénom: {{profileForm.get('email').value}}</p>
+    <p>Prénom: {{profileForm.get('civilite').value}}</p>
+    <p>Prénom: {{profileForm.get('login').value}}</p>
+    <p>Prénom: {{profileForm.get('password').value}}</p>
+    <p>Prénom: {{profileForm.get('pays').value}}</p>
+  </div>
+

@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { TotemComponent } from './totem/totem.component';
 import { BodyComponent } from './body/body.component';
 import { LoginComponent } from './login/login.component';
+import { TetiereComponent } from './tetiere/tetiere.component';
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { LoginComponent } from './login/login.component';
     FooterComponent,
     TotemComponent,
     BodyComponent,
-    LoginComponent
+    LoginComponent,
+    TetiereComponent,
+    FormulaireComponent,
+    RecapitulatifComponent
   ],
   imports: [
     BrowserModule,

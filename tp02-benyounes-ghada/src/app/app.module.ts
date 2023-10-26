@@ -27,7 +27,8 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RecapitulatifComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
